@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+    <title>Appointment for Vaccination</title>
+    <link rel="icon" type="/Images/x-icon" href="/Images/satyamev-jayte logo.jpg" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            
+            <img id="logo" src="../../Images/satyamev-jayte logo.jpg" alt="logo">
+            <div class="logo">
+                <h1 id="fontsize" class="logo-c">Co-WIN</h1>
+                <p class="logo-c">Winning Over Covid-19</p>
+            </div>
+            <ul class="menu">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="./appointment.html">APPOINTMENT</a></li>
+                <li><a href="../About/about.html">ABOUT</a></li>
+            </ul>
+            <div class="location">
+                <select name="state" id="state">
+                    <option selected  >State</option>
+                </select>
+
+                <select name="cities" id="cities">
+                    <option selected >District</option>
+                </select>
+
+                
+            </div>
+            
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit(){
+                    new google.translate.TranslateElement(
+                        {pageLanguage: 'en'}, 'google_translate_element'
+                    );
+                }
+            </script>
+
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+
+            </script>
+            <div class="loginbtn">
+                <a href="../Login/login.html">
+                    <button id="login-btn"><strong>Register/Sign In</strong> </button>
+                </a>
+            </div>
+        </nav>
+
+        <form class="form" action="./../Certificate/certificate.html" method="get" id="form" target="_blank">
+            <h2 style="text-align: center; margin: 25px 0px; color: darkcyan;">Register for Vaccination</h2>
+            <p style="text-align: center;">Your <strong>Photo ID</strong> will be verified at the time of your vaccination appointment. Please provide the details of the photo ID you will carry for vaccination.</p>
+            <div class="inp-details">
+                <input type="text" id="name" name="name" class="width" placeholder="Enter Your Full Name" required>
+                Gender <br>
+                <input type="radio" name="gender" value="Male"  style="margin-top: 10px; " checked>Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Other">Other <br>
+            Date of Birth :     <input type="date" id="date-of-birth"  name="date-of-birth" placeholder="Year of Birth" required>
+            
+            <select name="ids" id="ids" class="width" required>
+                <option value="" selected hidden>Photo ID Proof</option>
+                <option value="Aadhar Card">Aadhar Card</option>
+                <option value="Driving License">Driving License</option>
+                <option value="PAN Card">PAN Card</option>
+                <option value="Passport">Passport</option>
+                <option value="Pension Passbook">Pension Passbook</option>
+            </select>
+            <input type="tel" id="id-number" name="id-number" class="width" inputmode="numeric" pattern="[0-9]+" maxlength="12" placeholder="Photo ID Number" required>
+            
+            <input type="tel" id="mob-number" name="mob-number" class="bottom-m" inputmode="numeric" pattern="[0-9]+" maxlength="10" placeholder="Enter your mobile number">
+
+            <select name="vaccination-name" id="vaccination-name">
+                <option value="Covaxin" selected>Covaxin</option>
+                <option value="Covishild">Covishild</option>
+                <option value="Sputnik-V">Sputnik-V</option>
+            </select>
+
+            <select name="dose" id="dose" required>
+                <option value="Dose-1">Dose-1st</option>
+                <option value="Dose-2">Dose-2nd</option>
+                <option value="Final Dose">Final Dose</option>
+            </select>
+
+            Vaccination Appointment Date :    <input type="date" id="appointment-date" name="appointment-date" class="bottom-m" placeholder="Appointment Date">
+
+            <div class="btn">
+                <a href="./../Certificate/"></a>
+                <button value="submit" id="submit" /*onclick="test()"*/>Register</button>
+            </div>
+            </div>
+        </form>
+
+        <footer class="footer">
+            <p class="f-color">Copyright &copy; 2024 Co-WIN. All Rights Reserved &reg;</p>
+            <img src="" alt="">
+            <div class="tc-pp">
+                <a class="tcpp f-color" href="#">Terms of Serivice | </a>
+                <a class="tcpp f-color" href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        /*
+        //for geolocation
+        <p id="liveLocation"></p>
+            <button onclick="getLocation()">current position</button>
+
+        const x = document.getElementById("liveLocation");
+
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                x.innerHTML = "Geolocation is not supported in this browser.";
+            }
+        }
+
+        function showPosition(Position){
+            x.innerHTML = "Lattitude: "+ Position.coords.lattitude + "<br>Longitude : "+ Position.coords.longitude;
+        }
+
+        
+        //localstorage 
+        
+        function test(){
+            var name = document.getElementById("name").value;
+            var dob = document.getElementById("date-of-birth").value;
+            var idName = document.getElementById("ids").value;
+            var idNumber = document.getElementById("id-number").value;
+
+            for(var i=0; i<gender.length; i++){
+                if(gender[i].checked){
+                    document.getElementsByName("gender").innerHTML = gender[i].value;
+                }
+            }
+
+            localStorage.setItem("name", name);
+            localStorage.setItem("gender", gender)
+            localStorage.setItem("dob", dob);
+            localStorage.setItem("idName", idName);
+            localStorage.setItem("idNumber", idNumber);
+        }*/
+    </script>
+    <script src="../../app.js"></script>
+</body>
+</html>

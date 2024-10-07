@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fontsize{
+    font-size: 50px;
+}
+
+.logo-c{
+    color: #f9f6f6;
+}
+
+img#logo {
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #045050;
+}
+
+.menu{
+    display: flex;
+    
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    padding: 2px 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+.location {
+    margin: auto;
+}
+
+div#google_translate_element {
+    margin: auto;
+}
+
+.loginbtn {
+    margin: auto;
+}
+
+select#cities {
+    border: 0;
+    background-color: #f9f6f6;
+    width: auto;
+    padding: 4px;
+}
+
+select#state {
+    border: 0;
+    background-color: #f9f6f6;
+    width: 107px;
+    padding: 4px;
+}
+
+button#login-btn {
+    padding: 10px 20px;
+    border: 2px solid #f9f6f6;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+
+/*footer*/
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #045050;
+    padding: 20px;
+    margin-top: 11.2rem;
+
+}
+
+a.tcpp {
+    text-decoration: none;
+    color: white;
+}
+
+p.f-color {
+    color: white;
+}
+
+
+/*register form*/
+.register-page {
+    padding: 0 20px;
+}
+
+.logged-in {
+    display: flex;
+    align-items: center;
+    /*border: 1px solid black;
+    margin: 6rem; */
+    width: 750px;
+    padding: 20px;
+    margin: 6rem auto;
+    box-shadow: 0px 0px 20px 7px;
+    border-radius: 20px;
+}
+
+img{
+    width: 400px;
+}
+
+.bottom-m {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+
+input#mb-number {
+    padding: 5px 0px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+button.bottom-m {
+    padding: 5px;
+    border: none;
+    background-color: teal;
+    border-radius: 5px;
+    color: white;
+}

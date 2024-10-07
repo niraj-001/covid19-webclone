@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="icon" type="/Images/x-icon" href="/Images/satyamev-jayte logo.jpg" >
+    <title>Download Application</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></head>
+<body>
+    <div class="container" id="application">
+        <h1 id="heading">
+            Vaccination Application Details
+        </h1>
+        <div class="info-section">
+
+            <div class="photo">
+                
+            </div>
+            <div class="details">
+                <p class="info" >Applicant Name &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; : <span id="name"></span></p>
+                <p class="info" >Gender  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;                    &emsp; : <span id="gender"></span></p>
+                <p class="info" >Date of Birth   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; : <span id="date-of-birth"></span></p>
+                <p class="info" >Photo ID Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; : <span id="ids"></span></p>
+                <p class="info" >Photo ID Number &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp; : <span id="id-number"></span></p>
+                <p class="info" >Contact No. &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <span id="contact"></span></p>
+                <p class="info" >Applied for Vaccination &nbsp;&nbsp;     &emsp; : <span id="vaccine-name"></span></p>
+                <p class="info" >Applied for Dose  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp; : <span id="dose"></span></p>
+                <p class="info" >Vaccination Appointment Date : <span id="appointment-date"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn">
+        <button id="download">Download</button>
+    </div>
+
+
+    <script>
+        var data = window.location.search;
+
+        var params = new URLSearchParams(data);
+        console.log(params);
+
+        /*appointment.html
+        <div class="photo-select">
+                Upload Your Photo : <input type="file" name="file" id="file" required>
+            </div>
+
+        var img = params.get("file");
+        document.getElementById("photo").innerHTML = img;*/
+
+        var name = params.get("name");
+        document.getElementById("name").innerHTML = name;
+
+        var gender = params.get("gender");
+        document.getElementById("gender").innerHTML = gender;
+
+        var dob = params.get("date-of-birth");
+        document.getElementById("date-of-birth").innerHTML = dob;
+
+        var idName = params.get("ids");
+        document.getElementById("ids").innerHTML = idName;
+
+        var idNumber = params.get("id-number");
+        document.getElementById("id-number").innerHTML = idNumber;
+
+        /*var stateName = params.get("state");
+        document.getElementById("state").innerHTML = stateName;
+
+        var cityName = params.get("cities");
+        document.getElementById("cities").innerHTML = cityName;*/
+
+        var contactNo = params.get("mob-number");
+        document.getElementById("contact").innerHTML = contactNo;
+
+        var vaccineName = params.get("vaccination-name");
+        document.getElementById("vaccine-name").innerHTML = vaccineName;
+
+        var dose = params.get("dose");
+        document.getElementById("dose").innerHTML = dose;
+
+        var appointmentDate = params.get("appointment-date");
+        document.getElementById("appointment-date").innerHTML = appointmentDate;
+
+
+        
+    </script>
+    <script src="./certificate.js"></script>
+</body>
+</html>

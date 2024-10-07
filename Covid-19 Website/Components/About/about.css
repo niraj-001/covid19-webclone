@@ -1,0 +1,157 @@
+/*navbar*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fontsize{
+    font-size: 50px;
+}
+
+.logo-c{
+    color: #f9f6f6;
+}
+
+img#logo {
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #045050;
+}
+
+.menu{
+    display: flex;
+    
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    padding: 2px 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+.location {
+    margin: auto;
+}
+
+div#google_translate_element {
+    margin: auto;
+}
+
+.loginbtn {
+    margin: auto;
+}
+
+select#cities {
+    border: 0;
+    background-color: #f9f6f6;
+    width: auto;
+    padding: 4px;
+}
+
+select#state {
+    border: 0;
+    background-color: #f9f6f6;
+    width: 107px;
+    padding: 4px;
+}
+
+button#login-btn {
+    padding: 10px 20px;
+    border: 2px solid #f9f6f6;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+/*footer*/
+
+footer.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #045050;
+    padding: 20px 0px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+a.tcpp {
+    text-decoration: none;
+    color: white;
+}
+
+p.f-color {
+    color: white;
+}
+
+/*main*/
+.main {
+    margin: 100px 0px 36px 0px;
+    text-align: center;
+}
+
+.main-in {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.step {
+    margin: 50px 25px;
+    /* width: 300px; */
+    /* height: 600px; */
+}
+
+.data {
+    /* border: 1px solid black; */
+    width: 300px;
+    /*height: 200px;*/
+    box-shadow: 0 0 20px 2px;
+    border-radius: 10px;
+}
+
+p.middle {
+    padding: 20px 20px;
+    background-color: teal;
+    color: white;
+}
+
+p.last {
+    padding: 20px 30px;
+}
+
+h4#steph4 {
+    position: absolute;
+    top: 215px;
+    margin: 0 125px;
+    box-shadow: 0 0 1px 1px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img.about-img {
+    width: 280px;
+    height: 200px;
+}
+
+h2#steph2 {
+    padding: 10px 0px;
+    background-color: dimgrey;
+    color: white;
+}

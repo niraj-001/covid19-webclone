@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fontsize{
+    font-size: 50px;
+}
+
+.logo-c{
+    color: #f9f6f6;
+}
+
+img#logo {
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #045050;
+}
+
+.menu{
+    display: flex;
+    
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    padding: 2px 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+.location {
+    margin: auto;
+}
+
+div#google_translate_element {
+    margin: auto;
+}
+
+.loginbtn {
+    margin: auto;
+}
+
+select#cities {
+    border: 0;
+    background-color: #f9f6f6;
+    width: auto;
+    padding: 4px;
+}
+
+select#state {
+    border: 0;
+    background-color: #f9f6f6;
+    width: 107px;
+    padding: 4px;
+}
+
+button#login-btn {
+    padding: 10px 20px;
+    border: 2px solid #f9f6f6;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+/* middle area*/
+
+.middle-area {
+    display: flex;
+    /*background-color: rgb(255, 255, 255);*/
+    padding-top: 80px;
+}
+
+.block1 {
+    width: 50%;
+    /*border: 1px solid black;*/
+    padding: 50px;
+}
+
+p.b-p1 {
+    font-weight: bold;
+}
+
+h2.h2 {
+    border: 2px solid rgb(207, 66, 27);
+    color: rgb(207, 66, 27);
+    text-align: center; 
+    width: 200px;
+    padding: 10px ;
+    border-radius: 50px;
+}
+
+.block2 {
+    width: 50%;
+    /* border: 1px solid black; */
+    background-image: url(./Images/istockphoto-1334062523-1024x1024.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*middle area 1*/
+
+.middle-area1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+a#ma1-viewmore {
+    text-decoration: none;
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFC107;
+}
+
+/*footer
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: teal;
+    padding: 20px;
+}*/
+
+a.tcpp {
+    text-decoration: none;
+    color: white;
+}
+
+p.f-color {
+    color: white;
+}
+
+.footer-about-block {
+    margin-right: 200px;
+}
+
+.footer-about-block ul, .helplines ul {
+    list-style: none;
+}
+
+.footer-about-block ul li, .helplines li {
+    padding: 5px 0px;
+    list-style: none;
+}
+
+h4#contacth4 {
+    border-bottom: 5px solid #050a0a;
+    line-height: 30px;
+    color: black;
+}
+
+div#contact {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: darkcyan;
+    color: white;
+    padding: 20px 20px;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #045050;
+    padding: 10px;
+}
+
+.helplines {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: darkcyan;
+    color: white;
+    padding: 20px;
+}
+
+/*appointment*/
+.appointment {
+    padding: 50px 50px 0 50px;
+}
+
+h2.ap-h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #0b7b7b;
+}
+
+p.ap-p {
+    text-align: center;
+}
+
+h4.ap-h4 {
+    text-align: center;
+    padding: 10px;
+    color: mediumblue;
+}
+
+h1.by-dis {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 5px solid cadetblue;
+    color: grey;
+}
+
+img#b-slot-img {
+    width: 400px;
+}
+
+.slots {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b-slot {
+    margin: 4rem 80px 4rem 0;
+}
+
+.btm {
+    margin: 0 0 20px 0;
+}
+
+button.btn-b-slot {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: teal;
+    color: white;
+}
+
+/*Certificate block*/
+img#certificate-img {
+    width: 400px;
+    height: 300px;
+}
+
+.certificate {
+    display: flex;
+    padding: 0px 50px;
+    margin: 0 50px;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.c-ele {
+    margin: 0px 0px 20px 200px;
+}
+
+button.c-ele {
+    padding: 15px;
+    border-radius: 50px;
+    background-color: teal;
+    color: white;
+    border: none;
+}

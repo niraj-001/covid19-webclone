@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#fontsize{
+    font-size: 50px;
+}
+
+.logo-c{
+    color: #f9f6f6;
+}
+
+img#logo {
+    width: 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #045050;
+}
+
+.menu{
+    display: flex;
+    
+    margin: auto;
+}
+
+.menu li{
+    list-style: none;
+    padding: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    padding: 2px 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+.location {
+    margin: auto;
+}
+
+div#google_translate_element {
+    margin: auto;
+}
+
+.loginbtn {
+    margin: auto;
+}
+
+select#cities {
+    border: 0;
+    background-color: #f9f6f6;
+    width: auto;
+    padding: 4px;
+}
+
+select#state {
+    border: 0;
+    background-color: #f9f6f6;
+    width: 107px;
+    padding: 4px;
+}
+
+button#login-btn {
+    padding: 10px 20px;
+    border: 2px solid #f9f6f6;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #f9f6f6;
+}
+
+/*form*/
+.form{
+    margin: 10% 10%;
+    padding: 1rem;
+    margin-top: 200px;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+}
+
+.inp-details {
+    margin-top: 50px;
+}
+
+.width{
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 30px;
+}
+
+input[type="radio"] {    
+    margin: 0 5px 20px 20px;
+
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+select#ids {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid gray;
+}
+
+button#submit {
+    margin: 0 45%;
+    padding: 5px 10px;
+    background-color: #1b9891;
+    color: white;
+    font-weight: bold;
+}
+
+input#appointment-date {
+    margin-bottom: 20px;
+}
+
+#date-of-birth{
+    margin: 20px 0px;
+}
+
+
+/*footer*/
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #045050;
+    padding: 20px;
+}
+
+a.tcpp {
+    text-decoration: none;
+    color: white;
+}
+
+p.f-color {
+    color: white;
+}
+
+/*photo section*/
+
+.photo-select {
+    margin: 20px 20px;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: fit-content;
+}
+
+input#file {
+    padding: 10px;
+}
+
+/*Dose Dropdown*/
+
+select#dose {
+    width: 100%;
+    border: 2px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+    padding: 5px 0px;
+}
+
+/*Mobile Number*/
+
+input#mob-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+
+/*Vaccination name section*/
+
+select#vaccination-name {
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+

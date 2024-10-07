@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="/Images/x-icon" href="/Images/satyamev-jayte logo.jpg" >
+    <title>corona virus vaccines </title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            
+            <img id="logo" src="../../Images/satyamev-jayte logo.jpg" alt="logo">
+            <div class="logo">
+                <h1 id="fontsize" class="logo-c">Co-WIN</h1>
+                <p class="logo-c">Winning Over Covid-19</p>
+            </div>
+            <ul class="menu">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../Components/Appointment/appointment.html">APPOINTMENT</a></li>
+                <li><a href="../About/about.html">ABOUT</a></li>
+            </ul>
+            <div class="location">
+                <select name="state" id="state">
+                    <option selected  >State</option>
+                </select>
+
+                <select name="cities" id="cities">
+                    <option selected >District</option>
+                </select>
+
+                
+            </div>
+            
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit(){
+                    new google.translate.TranslateElement(
+                        {pageLanguage: 'en'}, 'google_translate_element'
+                    );
+                }
+            </script>
+
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+
+            </script>
+            <div class="loginbtn">
+                <button id="login-btn"><strong>Register/Sign In</strong> </button>
+            </div>
+        </nav>
+
+
+        <div class="logged-in">
+            <div class="img">
+                <img #side-img src="../../Images/bg-covid19.jpg" alt="">
+            </div>
+            <div class="register-page">
+                <h2 class="bottom-m">Register or Sign In for Vaccination</h2>
+                <p class="bottom-m ">An OTP will be sent to your mobile number for verification</p>
+                <form action="login.php" method="post">    
+                    <input type="tel" id="mb-number" class="bottom-m" inputmode="numeric" pattern="[0-9]+" maxlength="10" placeholder="Enter your mobile number">
+                    
+                    <button class="bottom-m">GET OTP</button>
+                </form>
+                <p class="bottom-m">By Sign In/Registration, I agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+
+            </div>
+        </div>
+
+        
+        <footer class="footer">
+            <p class="f-color">Copyright &copy; 2024 Co-WIN. All Rights Reserved &reg;</p>
+            <img src="" alt="">
+            <div class="tc-pp">
+                <a class="tcpp f-color" href="#">Terms of Serivice | </a>
+                <a class="tcpp f-color" href="#">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
